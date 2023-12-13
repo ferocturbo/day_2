@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <script defer src="./js/style.js"></script>
+    <title>SignUp</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="./images/keralammmm.jpg"
+          alt="logo"
+          id="nav-img"
+          width="30"
+          height="24"
+        />
+      </a>
+    </nav>
+    <div class="signup-box">
+      <h3 style="font-family:fantasy;font-size: x-large;">Register Here</h3>
+      <form action="login.html" onsubmit="return validate();" >
+        <ul style="font-family:fantasy;">
+          <li class="list-item"><label>Name</label></li>
+          <li><input type="text" id="namefield" required /></li>
+          <li class="list-item"><label>Username</label></li>
+          <li><input type="text" id="username" required/></li>
+          <li class="list-item"><label>Mobile No</label></li>
+          <li><input type="text" id="mbno" /></li>
+          <li class="list-item"><label>Email-id</label></li>
+          <li><input type="email" id="email" required/></li>
+          <li class="list-item"><label>Password</label></li>
+          <li><input onkeyup="trigger()" type="password" id="password" required/></li>
+          <li style="margin-top: 10px;"><p id="password_text"></p></li>
+<!--           
+          <div class="indicator">
+            <span class="weak">1</span>
+            <span class="medium">2</span>
+            <span class="strong">3</span>
+          </div> -->
+          
+          <li class="list-item"><label>Confirm Password</label></li>
+          <li><input type="password" id="confirmpassword" required/></li>
+        </br>
+          <li><label for="error" id="error"></label></li>
+          <li><input type="submit" value="submit" id="submit"></li>
+          
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
